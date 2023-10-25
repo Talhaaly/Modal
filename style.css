@@ -1,7 +1,92 @@
-*{
+* {
     margin: 0;
     position: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 0;
+}
+
+section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #c0c0c0;
+}
+
+button {
+    padding: 18px 26px;
+    border: none;
+    background-color: #4070f4;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #265df2;
+
+}
+
+button.show-modal,
+.modal-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-box i {
+    font-size: 70px;
+    color: blue;
+}
+
+.modal-box h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+.modal-box h3 {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.modal-box .buttons {
+    margin-top: 25px;
+}
+
+.modal-box button {
+    font-size: 15px;
+    padding: 8px 12px;
+    margin: 0 10px;
 }
